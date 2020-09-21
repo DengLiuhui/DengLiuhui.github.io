@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>1. Comparison of Restored Audios from Different Models</h1>
+<h3>1.1 Original speech</h3>
+<audio controls>
+  <source src="orig.wav" type="audio/wav">
+Not supported!
+</audio>
+
+<h3>1.2 Corrupted speech</h3>
+<audio controls>
+  <source src="corrup.wav" type="audio/wav">
+Not supported!
+</audio>
+
+<h3>1.3 Restored speech using 1-D CNN</h3>
+<h4> 1.3.1 Raw restored speech</h4>
+<audio controls>
+  <source src="1DCNN_noMask_log_stft.wav" type="audio/wav">
+Not supported!
+</audio>
+
+<h4> 1.3.2 Restored speech (only holes are filled)</h4>
+<audio controls>
+  <source src="1DCNN_noMask_log_stft_gap_filled.wav" type="audio/wav">
+Not supported!
+</audio>
+
+<h3>1.4 Restored speech using Context Encoder with DCGAN</h3>
+<h4> 1.4.1 Raw restored speech</h4>
+<audio controls>
+  <source src="ce_log_stft_DCGAN.wav" type="audio/wav">
+Not supported!
+</audio>
+
+<h4> 1.4.2 Restored speech (only holes are filled)</h4>
+<audio controls>
+  <source src="ce_log_stft_DCGAN_holes_filled.wav" type="audio/wav">
+Not supported!
+</audio>
+
+<h3>1.5 Restored speech using EdgeConnect without GANs (provided with ground-truth edge map)</h3>
+<h4> 1.5.1 Raw restored speech</h4>
+<audio controls>
+  <source src="ec_std_stft_noGAN.wav" type="audio/wav">
+Not supported!
+</audio>
+
+<h4> 1.5.2 Restored speech (only holes are filled)</h4>
+<audio controls>
+  <source src="ec_std_stft_noGAN_gap_filled.wav" type="audio/wav">
+Not supported!
+</audio>
+
+
+<h1>2. Comparison of Restored Audios from EdgeConnect (w/o GANs) Provided with Edge Maps of Different Quality</h1>
+<h3>2.1 Provided with ground-truth edge map</h3>
+<audio controls>
+  <source src="ec_std_stft_noGAN.wav" type="audio/wav">
+Not supported!
+</audio>
+
+<h3>2.1 Provided with corrupted edge map</h3>
+<audio controls>
+  <source src="ec_std_stft_noGAN_masked_edge.wav" type="audio/wav">
+Not supported!
+</audio>
+
+<h3>2.2 Provided with predicted edge map</h3>
+<audio controls>
+  <source src="ec_std_stft_no_GAN_pred_edge.wav" type="audio/wav">
+Not supported!
+</audio>
+
+<h3>2.3 Provided with a random edge map</h3>
+<audio controls>
+  <source src="ec_std_stft_no_GAN_random_edge.wav" type="audio/wav">
+Not supported!
+</audio>
+
+
+</body>
+</html>
